@@ -4,13 +4,11 @@ class Change
   end
 
   def calc()
-    quarters = 0
-    dimes = 0
-    quarters = (@money / 0.25).floor()
-    remainder = (@money % 0.25).round(2)
-    dimes = (remainder / 0.10).floor()
-    remainder = (remainder % 0.10)
-    nickels = (remainder % 0.05).ceil()
+    quarters = (@money / 25)
+    remainder = (@money % 25)
+    dimes = (remainder / 10)
+    remainder = (remainder % 10)
+    nickels = (remainder / 5)
 
   return "#{quarters} quarters and #{dimes} dimes and #{nickels} nickels"
   end
