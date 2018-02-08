@@ -4,7 +4,7 @@ require('coincount')
 
 describe('#coincount') do
   it("takes 25 cents and returns 25 cents") do
-      change_return = Change.new()
-    expect(change_return.calc(25)).to(eq(25))
+      change_return = Change.new(0.25)
+    expect(change_return.calc()).to(eq(0.25))
   end
 end
