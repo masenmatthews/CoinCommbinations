@@ -4,10 +4,6 @@ class Change
   end
 
   def calc()
-    # x = 0
-    until (@money <= 0 )
-      @money / 0.25
-    end
+    @money / 0.25
   end
-
 end
